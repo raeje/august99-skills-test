@@ -29,7 +29,7 @@ const Main = () => {
   return (
     <div className="w-screen h-screen px-20 py-10 bg-white flex place-items-center m-auto">
       {/* Content */}
-      <div className="w-full h-full bg-gray-100 flex flex-col gap-4 px-40 py-10 overflow-auto">
+      <div className="w-full h-full bg-gray-100 flex flex-col gap-4 p-2 md:px-40 md:py-10  overflow-auto">
         {/* Search Bar */}
         <div className="relative">
           <input
@@ -50,7 +50,7 @@ const Main = () => {
         </div>
 
         {/* Flights */}
-        <div className="bg-white flex flex-col p-10 gap-4 rounded-lg">
+        <div className="bg-white flex flex-col p-4 md:p-10 gap-4 rounded-lg">
           {filteredData
             ? renderFlights(filteredData)
             : renderFlights(launchData)}

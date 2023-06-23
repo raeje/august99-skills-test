@@ -5,7 +5,7 @@ const getDateYear = (date) => {
 };
 const FlightCard = ({ data }) => {
   return (
-    <div className="flex gap-4 bg-white border-2 border-gray-50 p-4">
+    <div className="flex gap-4 bg-white border-2 border-gray-50 md:p-4">
       {/* Image */}
       <img
         src={data.links.patch.small}
