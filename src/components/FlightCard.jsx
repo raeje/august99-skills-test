@@ -21,7 +21,7 @@ const FlightCard = ({ data }) => {
           <span>({getDateYear(data.date_local)})</span>
         </div>
 
-        <div className="text-sm text-gray-700">{data.details}</div>
+        <span className="text-sm text-gray-500">Details: {data.details}</span>
       </div>
     </div>
   );
